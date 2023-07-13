@@ -1,0 +1,75 @@
+<html>
+<head>
+      
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form To Email Using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+
+    <header>
+        
+        <a href="#" class="brand">MOVIES</a>
+        <div class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <a href="../home page/PK1.HTML">Home</a>
+          <a href="../credit page/INDEX2.HTML">Credit</a>
+          <a href="../about page/nav1.html">About</a>
+         
+          <a href="../Contact file/PROJECT2.HTML">Contact</a>
+          <a href="../home page/pk2.html">Sign out</a>
+        </div>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </header>
+  
+ 
+        <div class="container">
+
+            <br><br><br><br>
+            <form>
+        <h3>CONTACT FORM</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email id" required>
+        <input type="text" id="phone" placeholder="Phone no." required>
+        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+
+
+
+
+<script>
+
+    
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+
+</script>
+</body>
+</html>

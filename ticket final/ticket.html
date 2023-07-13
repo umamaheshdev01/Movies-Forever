@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Ticket</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="onen">
+  
+
+	<div class="hio">
+    <br>
+    <br>
+	<br>
+	<br>
+    
+    <br>
+    <br>
+    
+	<div class="ticket">
+		<div class="ticket-header">
+			<h1 class="ticket-title" id="moviebro">Spider-Man: No Way Home</h1>
+		
+		</div>
+
+		
+		<div class="ticket-info">
+
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Username:</p>
+				<p class="ticket-info-value" id="usq">Uma Mahesh</p>
+			</div>
+	
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Persons:</p>
+				<p class="ticket-info-value" id="kos">3</p>
+			</div>
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Theater:</p>
+				<p class="ticket-info-value" id="theat">AMC 16</p>
+			</div>
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Language</p>
+				<p class="ticket-info-value" id="langu">123 Main Street</p>
+			</div>
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Date:</p>
+				<p class="ticket-info-value" id="datu">Saturday, May 14, 2023</p>
+			</div>
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Time:</p>
+				<p class="ticket-info-value" id="timu">7:00 PM</p>
+			</div>
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Seat:</p>
+				<p class="ticket-info-value" id="seatu">B15</p>
+			</div>
+			<div class="ticket-info-section">
+				<p class="ticket-info-label">Price:</p>
+				<p class="ticket-info-value" id="priceu">$15.00</p>
+				</div>
+			</div>
+				<div class="ticket-confirmed">
+				<h2>Ticket Confirmed</h2>
+				<p>Thank you for your purchase. Enjoy the movie!</p>
+			</div>
+			
+
+
+            <div class="ticket-buttons">
+                <button class="ticket-print-button" onclick="window.print()">Print Ticket</button>
+                <a class="ticket-home-button" href="../home page/PK1.HTML">Back to Home</a>
+            </div>
+        </div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+		<script>
+
+			alert("Payment Successful. Redirecting !")
+           
+			document.getElementById("moviebro").innerHTML=localStorage.getItem("movie")
+			document.getElementById("langu").innerHTML=localStorage.getItem("lang")
+			document.getElementById("theat").innerHTML=localStorage.getItem("theatre")
+			document.getElementById("usq").innerHTML=localStorage.getItem("user")
+
+			document.getElementById("datu").innerHTML=localStorage.getItem("date")
+			document.getElementById("timu").innerHTML=localStorage.getItem("time")
+			document.getElementById("seatu").innerHTML=localStorage.getItem("seats")
+			document.getElementById("priceu").innerHTML="Rs "+localStorage.getItem("price")
+            
+
+           document.getElementById("kos").innerHTML=localStorage.getItem("persons")
+
+		   
+
+
+
+
+
+
+            let a = localStorage.getItem("movie")
+			document.getElementById('onen').style.backgroundImage=`url('${a}.jpg')`
+
+		</script>
+		
+</body>
+</html>

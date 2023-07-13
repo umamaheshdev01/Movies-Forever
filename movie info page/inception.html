@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inception</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+ 
+
+
+  <header class="one">
+        
+    <a href="#" class="brand">MOVIES</a>
+    <div class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <a href="../home page/PK1.HTML">Home</a>
+      <a href="../credit page/INDEX2.HTML">Credit</a>
+      <a href="../about page/nav.html">About</a>
+     
+      <a href="../Contact file/PROJECT2.HTML">Contact</a>
+      <a href="../home page/pk2.html">Sign Out</a>
+    </div>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </header>
+
+    <div class="hero">
+        
+        <div class="images">
+            <img src="images/shape.png" class="shape">
+            <img src="images/lenor1.png" class="girl">
+        </div>
+
+        <div class="detel">
+            <h1>Inception</h1>
+            <p> A thief who steals corporate secrets through the use of dream-sharing <br> technology is given the inverse task of planting an idea into the mind <br>of a C.E.O., but his tragic past may doom the project and his team to disaster.
+            </p>
+            
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <button class="btn1" id="watchTrailer" onclick="location.assign('#trai')">Watch Trailer</buttton>
+        <button class="btn2" onclick="fun('Inception')">Book Now</button>
+      
+      
+
+
+
+
+    </div>
+
+
+  
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="page2" id="trai">
+
+
+
+
+    <div class="detel">
+        <h1 style="color:white ;padding-top:40px">Trailer</h1>
+       
+        
+    </div>
+
+    
+        <embed width="640" class="player" height="360" src="https://www.youtube.com/v/YoHD9XEInc0?version=3&autoplay=1" controls type="application/x-shockwave-flash">
+      
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="../credit page/INDEX2.HTML">about us</a></li>
+            <li><a href="../about page/nav1.html">about page</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="../about page/nav1.html#hioo">FAQ</a></li>
+            <li><a href="../Contact file/PROJECT2.HTML">Contact</a></li>
+    
+           
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sponsered By</h4>
+          <ul>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Microsoft</a></li>
+            <li><a href="#">Book My Show</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+
+
+
+
+
+
+
+
+    <script>
+          window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+
+
+
+    
+    
+
+
+
+
+
+
+  
+    function fun(x)
+    {
+      localStorage.setItem('movie',x)
+
+      location.assign('../Theatre selection/u.html')
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    </script>
+</body>
+</html>

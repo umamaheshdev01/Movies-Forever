@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <linK rel="stylesheet" href="./STYLE1.CSS">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+  
+  
+  
+  
+  
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+       <!-- Fontawesome CDN Link -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <style>
+
+
+
+   body{
+    background-color:#1b1212;
+   }
+  .movie-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 240px;
+  display:inline-block;
+  margin:0 12px 25px 12px;
+}
+
+.movie-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie-box img {
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.movie-title {
+  color: #444;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  text-align:center;
+}
+
+.book-now-btn {
+  background-color: #ff5722;
+  border-radius: 25px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px auto;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: 160px;
+}
+
+.book-now-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+
+.hero{
+
+  
+
+  padding:30px;
+  margin:30px;
+  
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  
+.joi
+{
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  color: white;
+  padding-left:18px;
+  font-weight: 700;
+}
+
+    </style>
+
+   
+</head>
+<body >
+
+ 
+
+  <header>
+        
+    <a href="#" class="brand">MOVIES</a>
+    <div class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <a href="../home page/pk2.html">Home</a>
+      <a href="../credit page/index.html">Credit</a>
+      <a href="../about page/nav.html">About</a>
+     
+      <a href="../Contact file/project.html">Contact</a>
+      <a href="../login and signup/login.html">Sign in</a>
+    </div>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </header>
+
+
+
+
+
+<div class="main swiper mySwiper">
+  <div class="wrapper swiper-wrapper">
+    <div class="slide swiper-slide">
+
+      <a href="../movie info page/spider.html"><image src="./spi.jpg" class="image" ></image></a>
+
+
+    </div>
+
+
+    <div class="slide swiper-slide">
+
+      <a href="../movie info page/inception.html"><image src="./incept.jpg" class="image"></image></a>
+
+
+    </div>
+
+    <div class="slide swiper-slide">
+
+     <a href="../movie info page/demon.html"> <image src="./demon.jpg" class="image"></image></a> 
+
+
+    </div>
+
+
+    <div class="slide swiper-slide">
+
+     <a href="../movie info page/dasara.html"><image src="./dsra.jpg" class="image"></image></a> 
+
+
+    </div>
+
+
+    <div class="slide swiper-slide">
+
+     <a href="../movie info page/gog.html"> <image src="./rocky.jpg" class="image"></image> </a>
+
+
+    </div>
+  </div>
+
+  <div class="swiper-button-next nav-btn" ></div>
+  <div class="swiper-button-prev nav-btn" id="super"></div>
+  <div class="swiper-pagination"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="hero" id="hamma" >
+    
+
+
+   
+
+    <h1 class="joi">Trending Now</h1>
+    <br>
+    
+  
+
+
+    <a href="../login and signup/login.html"><div class="movie-box" data-title="avatar">
+      <img src="./images/demon.jpg" alt="Movie Poster">
+        <h3 class="movie-title">Demon Slayer</h3>
+        <a href="../login and signup/login.html" class="book-now-btn">Book Now</a></a> 
+      </div></a>
+
+      <a href="../login and signup/login.html"> <div class="movie-box" data-title="dasara">
+        
+        <img src="./DASARAPOST.jpg" alt="Movie Poster">
+        <h3 class="movie-title">Dasara</h3>
+        <a href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+      </div></a>
+
+      <a href="../login and signup/login.html">
+      <div class="movie-box" data-title="kgf">
+        <img src="./images/Spider.jpg" alt="Movie Poster">
+        <h3 class="movie-title">Spider-Man:ATSV</h3>
+        <a href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+      </div></a>
+
+
+      <a href="../login and signup/login.html">
+      <div class="movie-box" data-title="animal"> 
+        <img src="./images/inception.jpg" alt="Movie Poster">
+        <h3 class="movie-title">Inception</h3>
+        <a href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+      </div></a>
+
+      <a href="../login and signup/login.html">
+      <div class="movie-box" data-title="gog">
+        <img src="./gog3.jpg" alt="Movie Poster">
+        <h3 class="movie-title">GOG 3</h3>
+        <a   href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+      </div></a>
+
+  <br>
+<br>
+
+  <br>
+
+
+      <a href="../login and signup/login.html">
+        <div class="movie-box" data-title="gog">
+          <img src="./images/kerala.jpg" alt="Movie Poster">
+          <h3 class="movie-title">The Kerala Story</h3>
+          <a   href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+        </div></a>
+
+
+
+        <a href="../login and signup/login.html">
+          <div class="movie-box" data-title="gog">
+            <img src="./images/Fast_X_poster.jpg" alt="Movie Poster">
+            <h3 class="movie-title">Fast-X</h3>
+            <a   href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+          </div></a>
+
+
+
+
+          <a href="../login and signup/login.html">
+            <div class="movie-box" data-title="gog">
+              <img src="./images/pushpa.jpg" alt="Movie Poster">
+              <h3 class="movie-title">Pushpa 2-The Rise</h3>
+              <a   href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+            </div></a>
+
+
+
+
+            <a href="../login and signup/login.html">
+              <div class="movie-box" data-title="gog">
+                <img src="./images/virupaksha.jpg" alt="Movie Poster">
+                <h3 class="movie-title">Virupaksha</h3>
+                <a   href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+              </div></a>
+
+
+
+              <a href="../login and signup/login.html">
+                <div class="movie-box" data-title="gog">
+                  <img src="./images/oppenheimer(!).jpg" alt="Movie Poster">
+                  <h3 class="movie-title">Oppenheimer</h3>
+                  <a   href="../login and signup/login.html" class="book-now-btn">Book Now</a>
+                </div></a>
+
+  
+
+
+    
+  
+  
+      
+    </div>
+
+
+
+    
+    <br>
+
+
+    
+
+
+
+    <!-- <div class="pagema">
+      <div class="inp1">
+        <p>Your Ultimate Movie <br> Booking Destination</p>
+
+        <p class="bachha">
+            Book Your Movie Experience with FlixBooking - Lights, Camera, Action!
+        </p>
+    
+    </div>
+    </div> -->
+
+
+
+
+           
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+              <li><a href="../credit page/index.html">about us</a></li>
+              <li><a href="../about page/nav.html">about page</a></li>
+             
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="../about page/nav.html#hioo">FAQ</a></li>
+              <li><a href="../Contact file/project.html">Contact</a></li>
+      
+             
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Sponsered By</h4>
+            <ul>
+              <li><a href="#">Google</a></li>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Book My Show</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+  
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       slidesPerView: 1,
+       
+       loop:true,
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+
+
+
+     
+// const elementToClick = document.getElementById('super');
+// const clickInterval = 3000;
+
+// function clickElementRepeatedly() {
+//   // Trigger the click on the element
+//   elementToClick.click();
+
+//   // Schedule the next click after the specified interval
+//   setTimeout(clickElementRepeatedly, clickInterval);
+// }
+
+// // Start the clicking loop
+// clickElementRepeatedly();
+
+
+const pn=document.getElementById('super')
+
+setInterval(()=>{
+  pn.click()
+},3000)
+
+   </script>
+
+
+<script >
+function hi()
+{
+ location.assign("../LOGIN PAGE/LOGIN.HTML")
+
+
+  
+}
+
+
+  var a=0;
+
+
+
+
+function hide()
+{
+  window.open('https://www.google.co.in')
+}
+
+
+
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

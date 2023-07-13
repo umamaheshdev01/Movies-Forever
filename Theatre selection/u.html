@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Ticket Booking Portal</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+
+
+
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background: black;
+  padding: 15px 100px;
+}
+
+header .brand{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin:0px;
+    padding:0px;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif;
+   */
+
+   font-family: "Poppins", sans-serif;
+}
+
+		h1 {
+			text-align: center;
+			margin-top: 30px;
+			color: #555;
+		}
+
+		.main {
+			max-width: 500px;
+			margin: 50px auto;
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+			color: #333;
+		}
+
+		input[type="text"],
+		select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+
+		.btn{
+			display: block;
+			background-color: #fa701b;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+			
+		}
+
+		
+
+
+  
+  *{
+	margin:0;
+	padding:0;
+  }
+
+  body {
+	background-color: #e8b742;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+	font-size: 36px;
+	margin-top: 0;
+	color: #008CBA;
+}
+
+form {
+	text-align: left;
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+	margin-bottom: 10px;
+	width: 95%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.column {
+	float: left;
+	width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+
+	
+
+	</style>
+</head>
+<body>
+
+
+
+
+
+	<header>
+        
+		<a href="#" class="brand">MOVIES</a>
+		<div class="menu">
+		  <div class="btn">
+			<i class="fas fa-times close-btn"></i>
+		  </div>
+		  <a href="../home page/PK1.HTML">Home</a>
+		  <a href="../credit page/INDEX2.HTML">Credit</a>
+		  <a href="../about page/nav1.html">About</a>
+		 
+		  <a href="../Contact file/PROJECT2.HTML">Contact</a>
+		  <a href="../home page/pk2.html">Sign out</a>
+		</div>
+		<div class="btn">
+		  <i class="fas fa-bars menu-btn"></i>
+		</div>
+	  </header>
+  
+<br><br><br><br>
+
+	<div class="main">
+
+		<label for="Movies">Movie:</label>
+		<select id="jokk" name="movies">
+			<option value="Spider-Man">Spider Man</option>
+			<option value="Inception">Inception</option>
+			<option value="GOG3">Guardians of Galaxy 3</option>
+			<option value="Demon Slayer">Demon Slayer</option>
+			<option value="Dasara">Dasara</option>
+		</select>
+		
+
+
+	
+
+		
+		<label for="Location">Local:</label>
+		<select id="loacl" name="nothing">
+			<option value="Delhi">Delhi</option>
+			<option value="Chennai">Chennai</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Mumbai">Mumbai</option>
+			<option value="Kolkata">	Kolkata</option>
+	
+			
+		</select>
+
+
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date">
+        <br>
+        <br>
+
+		<label for="Theatres">Theatre:</label>
+		<select id="theatre" name="theatre">
+			<option value="Lakshmi Theatre">Lakshmi Theatre</option>
+			<option value="Arjun Theatre">Arjun Theatre</option>
+			<option value="Ganesh Theatre">Ganesh Theatre</option>
+			
+		</select>
+
+
+		
+            
+		<label for="language">Language:</label>
+		<select id="language" name="location">
+			<option value="Telugu">Telugu</option>
+			<option value="Hindi">Hindi</option>
+			<option value="English">English</option>
+			
+		</select>
+
+		
+		
+		
+		
+
+		<label for="show-time">Show Timing:</label>
+		<select id="show-time" name="show-time">
+			<option value="9:00 am">9:00 am</option>
+			<option value="12:30 pm">12:30 pm</option>
+			<option value="4:00 pm">4:00 pm</option>
+			<option value="7:30 pm">7:30 pm</option>
+		</select>
+           
+		
+
+		<button class="btn" onclick="fine()">Confirm</button>
+
+	</div>
+
+	
+	</div>
+
+
+
+	<script>
+       
+
+	   let a=localStorage.getItem("movie")
+
+	   document.getElementById("jokk").value=a
+
+	  
+
+
+
+	   function fine(){
+       
+	   let yu =document.getElementById("jokk").value
+	   let date = document.getElementById("date").value
+	   let theatre = document.getElementById("theatre").value
+	   let lang = document.getElementById("language").value
+	   let time = document.getElementById("show-time").value
+	   
+
+          localStorage.setItem("movie",yu)
+		  localStorage.setItem("date",date)
+		  localStorage.setItem("theatre",theatre)
+		  localStorage.setItem("lang",lang)
+		  localStorage.setItem("time",time)
+		  
+		
+
+		
+		location.assign('../seat matrix/seat.htm')
+		}
+
+	 //javascript for navigation bar effect on scroll
+	 window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+
+</body>
+</html>

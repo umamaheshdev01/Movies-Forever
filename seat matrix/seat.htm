@@ -1,0 +1,227 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+
+
+    <header>
+        
+      <a href="#" class="brand">MOVIES</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="../home page/PK1.HTML">Home</a>
+        <a href="../credit page/INDEX2.HTML">Credit</a>
+        <a href="../about page/nav1.html">About</a>
+       
+        <a href="../Contact file/PROJECT2.HTML">Contact</a>
+        <a href="../home page/pk2.html">Sign out</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+         
+
+    
+
+  <div class="uma">
+
+    <h2 id="hifu">Lakshmi Theatres</h2>
+    <br>
+
+    
+  
+  
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+      <div class="row">
+        
+
+
+
+
+        
+        <div class="seat" id="A1" onclick="seat('A1')" >A1</div>
+        <div class="seat" id="A2" onclick="seat('A2')">A2</div>
+        <div class="seat" id="A3" onclick="seat('A3')">A3</div>
+        <div class="seat" id="A4" onclick="seat('A4')">A4</div>
+        <div class="seat occupied" >A5</div>
+        <div class="seat" id="A6" onclick="seat('A6')">A6</div>
+        <div class="seat" id="A7" onclick="seat('A7')">A7</div>
+        <div class="seat" id="A8" onclick="seat('A8')">A8</div>
+        <div class="seat" id="A9" onclick="seat('A9')">A9</div>
+     
+      </div>
+      <div class="row">
+
+        
+        <div class="seat" id="B1" onclick="seat('B1')">B1</div>
+        <div class="seat" id="B2" onclick="seat('B2')">B2</div>
+        <div class="seat" id="B3" onclick="seat('B3')">B3</div>
+        <div class="seat occupied">B4</div>
+        <div class="seat occupied">B5</div>
+        <div class="seat" id="B6" onclick="seat('B6')">B6</div>
+        <div class="seat" id="B7" onclick="seat('B7')">B7</div>
+        <div class="seat" id="B8" onclick="seat('B8')">B8</div>
+        <div class="seat"id="B9" onclick="seat('B9')">B9</div>
+        
+      </div>
+
+      <div class="row">
+
+        
+        <div class="seat" id="C1" onclick="seat('C1')">C1</div>
+        <div class="seat occupied">C2</div>
+        <div class="seat" id="C3" onclick="seat('C3')">C3</div>
+        <div class="seat" id="C4" onclick="seat('C4')">C4</div>
+        <div class="seat" id="C5" onclick="seat('C5')">C5</div>
+        <div class="seat" id="C6" onclick="seat('C6')">C6</div>
+        <div class="seat occupied">C7</div>
+        <div class="seat occupied">C8</div>
+        <div class="seat" id="C9" onclick="seat('C9')">C9</div>
+        
+      </div>
+
+      <div class="row">
+
+   
+        <div class="seat" id="D1" onclick="seat('D1')">D1</div>
+        <div class="seat" id="D2" onclick="seat('D2')">D2</div>
+        <div class="seat occupied">D3</div>
+        <div class="seat" id="D4" onclick="seat('D4')">D4</div>
+        <div class="seat" id="D5" onclick="seat('D5')">D5</div>
+        <div class="seat" id="D6" onclick="seat('D6')">D6</div>
+        <div class="seat" id="D7" onclick="seat('D7')">D7</div>
+        <div class="seat" id="D8" onclick="seat('D8')">D8</div>
+        <div class="seat" id="D9" onclick="seat('D9')">D9</div>
+        
+      </div>
+
+      <div class="row">
+
+        
+        <div class="seat" id="E1" onclick="seat('E1')">E1</div>
+        <div class="seat" id="E2" onclick="seat('E2')">E2</div>
+        <div class="seat" id="E3" onclick="seat('E3')">E3</div>
+        <div class="seat occupied">E4</div>
+        <div class="seat occupied">E5</div>
+        <div class="seat" id="E6" onclick="seat('E6')">E6</div>
+        <div class="seat" id="E7" onclick="seat('E7')">E7</div>
+        <div class="seat" id="E8" onclick="seat('E8')">E8</div>
+        <div class="seat" id="E9" onclick="seat('E9')">E9</div>
+        
+      </div>
+
+      <!-- <div class="row">
+
+        
+        <div class="seat">F1</div>
+        <div class="seat">F2</div>
+        <div class="seat">F3</div>
+        <div class="seat">F4</div>
+        <div class="seat occupied">F5</div>
+        <div class="seat occupied">F6</div>
+        <div class="seat occupied">F7</div>
+        <div class="seat">F8</div>
+        <div class="seat">F9</div>
+         
+      </div> -->
+
+      <div class="row">
+
+
+  
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of &#8377<span id="total">0</span> (&#8377 150 each)
+    </p> 
+<br>
+
+    <button onclick="final()" class="btn">Confirm</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+    <script>
+      //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+
+  </body>
+</html>

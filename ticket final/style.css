@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+	background-image: url('./spider.jpg');
+	background-size: cover;
+	
+	background-repeat:no-repeat;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.ticket {
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	padding: 20px 40px 20px 40px;
+	position: relative;
+}
+
+
+.ticket-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.ticket-title {
+	font-size: 28px;
+	margin: 0;
+	color: #ff1d00;
+}
+
+.ticket-subtitle {
+	font-size: 16px;
+	margin: 0;
+	color: #666;
+}
+
+.ticket-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.ticket-info-section {
+	flex-basis: calc(50% - 10px);
+}
+
+.ticket-info-label {
+	font-size: 14px;
+	margin: 0;
+	color: #666;
+}
+
+.ticket-info-value {
+	font-size: 18px;
+	margin: 0;
+	color: #333;
+}
+
+.ticket-confirmed {
+	background-color: #02b3fc;
+	color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.ticket-confirmed h2 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.ticket-confirmed p {
+	font-size: 16px;
+	margin: 10px 0 0;
+}
+
+@media screen and (max-width: 600px)
+{}
+
+.ticket-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.ticket-print-button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.ticket-home-button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.ticket-home-button:hover ,.ticket-print-button:hover{
+	background-color: #f8c327;
+	color: #000;
+}
+
+

@@ -1,0 +1,451 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+
+
+
+
+.btn1{
+    margin-left:120px;
+    padding:10px;
+    border-radius:20px;
+    font-size: 20px;
+    /* */
+    background-color: white;
+}
+
+
+.btn2{
+    margin-left:20px;
+    padding:10px;
+    border-radius:20px;
+    font-size: 20px;
+    background-color: white;
+    
+}
+
+
+.btn1:hover
+{
+    background-color: #06e19e;
+    cursor:pointer;
+
+}
+
+
+.btn2:hover{
+    background-color:#f72e9d;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.section-main h1{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background:#f8c327;
+  padding: 15px 100px;
+}
+
+header .brand{
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color:black;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+  font-family: "Poppins", sans-serif;
+}
+
+header .menu a:hover{
+  background: #000;
+  color: #fff;
+}
+
+header .btn{
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+.popup .overlay
+{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,0.7);
+    z-index:1;
+
+
+}
+
+
+
+
+.popup .content
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    width:450px;
+    height:220px;
+    z-index:2;
+    text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+
+
+}
+
+
+.page2
+{
+    background-color:black;
+    min-height:100vh;
+}
+
+
+
+
+
+
+
+
+
+#player
+{
+    margin:30px auto;
+}
+
+
+.player{
+    width:65%;
+    height:70vh;
+    margin:30px 0 0 300px;
+}
+
+/* Styling for the pop-up */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

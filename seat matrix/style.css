@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+* {
+    margin:0px;
+    padding:0px;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif;
+   */
+
+   font-family: "Poppins", sans-serif;
+}
+
+.uma{
+  background-color:#3a3843;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  font-family: 'Lato', 'sans-serif';
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: white;
+  height:35px;
+  width: 35px;
+  color:black;
+  margin: 7px;
+  text-align:center;
+  border-top-left-radius: 10px;
+  FONT-SIZE:15PX;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #06e19e;
+  text-align:center;
+  FONT-SIZE:15PX;
+}
+
+.seat.occupied {
+  background-color:#f8c327;
+  text-align:center;
+  FONT-SIZE:15PX;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: RED;
+}
+
+
+
+
+
+
+
+.btn {
+    background-color: #06e19e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .btn:hover
+  {
+    cursor:pointer;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+  }
+  
+  header.sticky{
+    background: black;
+    padding: 15px 100px;
+  }
+  
+  header .brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
+  header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .menu a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+  }
+  
+  header .menu a:hover{
+    color: #000;
+    background: #fff;
+  }
+  
+  header .btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  @media (max-width: 1060px){
+    header .btn{
+      display: block;
+    }
+  
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  
+    header .menu{
+      position: fixed;
+      background: #1483D5;
+      flex-direction: column;
+      min-width: 400px;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      padding: 80px 50px;
+      transition: 0.5s;
+      transition-property: right;
+    }
+  
+    header .menu.active{
+      right: 0;
+    }
+  
+    header .menu .close-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .menu a{
+      display: block;
+      font-size: 20px;
+      margin: 20px;
+      padding: 0 15px;
+    }
+  }
+  
+  @media (max-width: 630px){
+    .section-main h1{
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

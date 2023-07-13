@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background-color:black;
+}
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.section-main h1{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background: black;
+  padding: 15px 100px;
+}
+
+header .brand{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+
+.page1
+{
+    background-image: url('./images/super.jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.page2
+{
+    background-color: #1c1c1c;
+    color:#fff;
+    min-height: 100vh;
+
+   
+}
+
+.tit
+{
+  font-size: 3rem;
+  margin: 3rem 0rem;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.page2div
+{
+  font-family: 'Lato', sans-serif;
+
+  width:80%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page3
+{
+    background-image: url('./images/1160125.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
+
+
+
+}
+
+
+.inp1
+{
+    color:white;
+    font-size: 50px;
+    padding-top:250px;
+    padding-left:100px;
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    line-height: 70px;
+}
+
+
+.bachha
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.btn
+{
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    width:240px;
+    height:60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border:3px solid white;
+    display:block;
+    text-decoration:none;
+    color:white;
+    position:relative;
+    overflow:hidden;
+    background:transparent;
+    transition: .3s;
+
+}
+
+.btn:hover
+{
+  color:red;
+  border-color: red;
+  cursor: pointer;
+}
+
+
+
+
+.faq
+{max-width: 700px;
+ margin-top: 2rem;
+ padding-bottom: 1rem;
+ border-bottom: 2px solid #fff;
+ cursor:pointer
+
+}
+
+.ques
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.ans p{
+  padding: 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+
+.ans{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+
+.faq.active .ans{
+  max-height: 300px;
+}
+
+.faq.active svg
+{
+  transform: rotate(180deg)
+}
+
+
+svg{
+  transition: transform .5s ease-in;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+.fon{
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

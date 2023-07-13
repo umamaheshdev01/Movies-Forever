@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+        
+    <header>
+        
+        <a href="#" class="brand">MOVIES</a>
+        <div class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <a href="../home page/pk2.html">Home</a>
+          <a href="../credit page/index.html">Credit</a>
+          <a href="../about page/nav.html">About</a>
+         
+          <a href="../Contact file/project.html">Contact</a>
+          <a href="../login and signup/login.html">Sign in</a>
+        </div>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </header>
+
+<div class="sare">
+
+  <div class="wrapper">
+    <h1>Sign Up</h1>
+    <form action="#">
+      <div class="field email">
+        <div class="input-area">
+          <input type="email" placeholder="Email Address" id="mail" required>
+          <i class="icon fas fa-envelope"></i>
+          
+        </div>
+        
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password" id="pass" required>
+          <i class="icon fas fa-lock"></i>
+          
+        </div>
+        
+      </div>
+      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <input type="button" value="Sign Up" onclick="sign()">
+    </form>
+    <div class="sign-txt">Already a member? <a href="./login.html">Login now</a></div>
+  </div>
+
+
+
+
+</div>
+
+
+
+<script>
+
+function sign(){
+   var a = document.getElementById("mail").value
+   var b = document.getElementById("pass").value
+
+
+  if(a in localStorage)
+  {
+    alert("User Already Exists !")
+  }
+  else if(b.length<8)
+  {
+    alert("Password must be 8 characters long.")
+  }
+  else
+  {
+    alert("Sucessfully Signed Up !")
+    localStorage.setItem(a,b)
+    localStorage.setItem("user",a)
+  }
+
+
+}
+  
+
+  
+  
+  
+  
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
