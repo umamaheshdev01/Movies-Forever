@@ -2,7 +2,7 @@
 
 **MovieForever** is a movie booking website that offers an easy and efficient way to browse movies, select seats, and book tickets. The site features a seat matrix for seat selection and generates a PDF ticket for each booking. Built using pure HTML, CSS, and JavaScript, it provides a user-friendly interface for managing your movie outings.
 
-![MovieForever Screenshot](https://myqgvtknkeilmcxriqhc.supabase.co/storage/v1/object/public/Pics/Screenshot%202024-07-23%20205220.png)
+![MovieForever Screenshot](https://myqgvtknkeilmcxriqhc.supabase.co/storage/v1/object/public/Pics/Screenshot%202024-07-23%20205220(1).png)
 
 ### Tech Stack
 
