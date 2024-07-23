@@ -15,7 +15,7 @@
 - **Ticket Booking**: Book tickets and confirm your selection.
 - **PDF Generation**: Receive a PDF file of your booked tickets.
 
-![MovieForever Screenshot]('https://myqgvtknkeilmcxriqhc.supabase.co/storage/v1/object/public/Pics/Screenshot%202024-07-23%20204553.png')
+![MovieForever Screenshot](https://myqgvtknkeilmcxriqhc.supabase.co/storage/v1/object/public/Pics/Screenshot%202024-07-23%20204553.png)
 
 ### Links
 
