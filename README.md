@@ -19,5 +19,4 @@
 
 ### Links
 
-- [GitHub Repository](https://github.com/umamaheshdev01/Movie-Website/)
-- [Live Demo](your-live-demo-link)
+- [Live Demo](https://movietickets-two.vercel.app/)
