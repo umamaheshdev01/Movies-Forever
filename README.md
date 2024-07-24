@@ -1,23 +1,26 @@
-# MovieForever
+# HopShop
 
-**MovieForever** is a movie booking website that offers an easy and efficient way to browse movies, select seats, and book tickets. The site features a seat matrix for seat selection and generates a PDF ticket for each booking. Built using pure HTML, CSS, and JavaScript, it provides a user-friendly interface for managing your movie outings.
+**HopShop** is an e-commerce website that sells medicines, groceries, home accessories, and even clothes. It provides a seamless shopping experience with features for displaying items, purchasing, and managing orders through a comprehensive dashboard. Built using React and Next.js for the frontend and Next.js, Supabase, and Clerk for the backend, it integrates modern UI components and libraries like Shadcn to enhance user experience.
 
-![MovieForever Screenshot](https://github.com/umamaheshdev01/Movie-Website/blob/master/img4.png?raw=true)
+![HopShop Screenshot](hop1.png)
 
 ### Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: React, Next.js
+- **Backend**: Next.js, Supabase, Clerk
+- **Libraries**: Shadcn
 
 ### Features
 
-- **Movie Display**: Browse a list of current and upcoming movies.
-- **Seat Matrix**: Select seats from an interactive seat matrix.
-- **Ticket Booking**: Book tickets and confirm your selection.
-- **PDF Generation**: Receive a PDF file of your booked tickets.
+- **Item Display**: Browse and search for a wide range of products.
+- **Purchasing**: Add items to the cart and complete purchases.
+- **Dashboard**: Manage orders, inventory, and customer details.
+- **Authentication**: Secure user authentication and account management.
+- **Email Notifications**: Send emails for purchase confirmations and updates.
+- **Shopping Cart**: Manage items in your cart and view previous purchases.
 
-![MovieForever Screenshot](https://github.com/umamaheshdev01/Movie-Website/blob/master/img2.png?raw=true)
+![HopShop Screenshot](hop2.png)
 
 ### Links
 
-- [GitHub Repository](https://github.com/umamaheshdev01/Movie-Website/)
-- [Live Demo](your-live-demo-link)
+- [Live Demo](https://hopshoparjun.vercel.app/)
